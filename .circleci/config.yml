@@ -59,13 +59,13 @@ workflows:
   build-test-and-deploy:    
     jobs:      
       - build-and-test:
-          context: serverless-fastapi-dev
+          context: zxc-tech-context
           filters:            
             branches:
               only:
                 - develop
       - deploy-dev:
-          context: serverless-fastapi-dev
+          context: zxc-tech-context
           requires:
             - build-and-test    
           filters:        
