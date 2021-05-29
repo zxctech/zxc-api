@@ -6,7 +6,7 @@ gh repo clone zxctech/zxc-api
 ### Setup Virtual Environment
 
 ```shell
-virtualenv -p python3.7 venv
+virtualenv -p python3.7 env
 source venv/bin/activate
 ```
 
