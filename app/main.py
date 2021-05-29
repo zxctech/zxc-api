@@ -10,6 +10,10 @@ app = FastAPI()
 async def root():
     return {"message": f"This is our secret key value: {config.settings.secret_key}" }
 
+@app.get("/hello")
+async def root():
+    return {"message": "Hello" }
+
 
 app.include_router(api_router, prefix=config.settings.prefix)
 handler = Mangum(app)
